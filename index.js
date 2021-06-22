@@ -4,7 +4,7 @@ const cors = require('cors')
 const app = express()
 const mongoose = require('mongoose')
 const {initializeRoutes} = require('./routes/routesInitializer')
-const userRouter = require('./routes/user')
+
 const bodyParser = require('body-parser')
 app.use(cors())
 

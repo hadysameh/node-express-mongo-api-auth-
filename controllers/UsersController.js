@@ -33,7 +33,6 @@ class UserController{
         // console.log(req.body)
         User.checkIfEmailExists(req.body.email,(isEmailExists,user)=>{
             if(isEmailExists){
-                // console.log('email exists')
                 res.status(400).json({status:'this email is already registered please login'});
             }
             else{
@@ -63,8 +62,6 @@ class UserController{
                 
             }
         })
-        // console.log('ending with sending email')
-        // res.json(req.body.email)
     }
 }
 
